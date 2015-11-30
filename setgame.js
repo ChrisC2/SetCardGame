@@ -6,7 +6,7 @@ var Card = function (color, shape, shading, number) {
     this.number = number;
 }
 
-//Creates a deck of cards where each card is unique
+//Creates a deck of 81 cards where each card is unique
 var deck = [];
 var createDeck = function () {
     var color = ["red", "green", "purple"];
