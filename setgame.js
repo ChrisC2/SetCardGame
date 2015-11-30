@@ -115,13 +115,13 @@ var findSets = function () {
     return results;
 }
 
-//Plays entire Set Game through until no Sets remain
+//Plays entire Set Game through until no Sets remain & deck is exhausted
 //Returns all Game Sets
 var setGame = function() {
     createDeck();
     shuffleDeck();
     addNCards(12);
-  while(deck.length > 0) {
+    while(deck.length > 0) {
       if(deck.length === 0 && findSets() === []) {
           return;
       }
